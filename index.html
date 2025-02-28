@@ -7,94 +7,93 @@
 </head>
 <style>
     *{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: arial,Times New Roman;
+        margin:0px;
+        padding:0px;
     }
     html,
     body{
-        height:100%;
-        width:100%;
+        text-align:  center;
+        }
+    h1{
+        background-color: aqua;
+        line-height: 70px;
+        margin-bottom: 70px;
     }
-    main{
-        height:100%;
-        width:100%; 
-        background-color: black;
-    }
-    h2{
-        padding:30px;
-    }
-    nav{
-        padding:20px 70px;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    nav .items{
+    .choices{
         display: flex;
-        align-items: center;
         justify-content: center;
-        gap: 80px;
-     font-weight: 520;
+        align-items:center;
+        gap: 70px;
     }
-    nav h2{
-          font-size: 20px;
-          font-weight: 700;
-    }
-    nav a{
-        font-size: 19px;
-        text-decoration: none;
-        color: black;
-    }
-    section{
-        padding: 0px 70px;
-    
-
-    }
-    section .text1{
-        
+     .choice{
+        height:155px;
+        width:155px;
+        border-radius: 50%;
         display: flex;
+        justify-content: center;
+        align-items:center;
     }
-    .text1 h1{
-        font-size: 200px;
+    .choice:hover{
+        cursor: pointer;
+       background-color: black;
+            
+    } 
+    img{
+        height:140px;
+        width:140px;
+        object-fit: cover;
+        border-radius: 50%;
     }
-    section .text2{
-      font-size: 100px;
-        font-weight: 20;
+   .score-board{
+         display: flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 25px;
+        gap:70px;
+        margin-top: 50px;
+   }
+   #user-score,#comp-score{
+       font-size: 50px;
+   }
+    .msg{
+        margin-top: 50px;
     }
-    .text1 .VIDEO{
-        height: 100px;
-        width: 150px;
-        background-color: #996ff4;
-
-    }
-
-    
-    
+   #text{
+     font-size: 25px;
+    background-color: rgb(226, 43, 144);
+    line-height: 5rem;
+    display: inline;
+    border-radius: 1rem;
+    padding: 1rem;
+   }
 </style>
 <body>
-  <main>
-    <nav>
-        <h2>Das Grune</h2>
-        <div  class="items">
-            <a href="#">About Us </a>
-            <a href="#">Projects</a>
-            <a href="#">Services</a>
-            <a href="#">Let's Talk</a>
+    <h1>Rock  Paper Scissor </h1>
+    <div class="choices">
+        <div class ="choice" id="rock">
+            <img src="rock (2).png">
         </div>
-         
-    </nav>
-    <section>
-         <div class="text1">
-           <h1>DIGITIZE</h1>
-         </div>
-            <div class="VIDEO">
-         </div>
-         <div class="text2">
-            <h1>IDEAS</h1>
+       <div class ="choice" id="paper">
+           <img src="paper.png">
+       </div>
+       <div class ="choice" id="scissor">
+           <img src="scissors.png">
+       </div>
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+             <p>YOU</p>
         </div>
-    </section>
-</main>
+        <div class="score">
+            <p id="comp-score">0</p>
+             <p>COMP</p>
+        </div>
+    </div>
+    <div class = "msg">
+       <p id="text">Play Your Move</p>
+    </div>
+ <script src="First.js"></script>
+  
 </body>
 </html>
