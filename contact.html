@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MetroRide</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>Metro<b class="accent">Ride</b></h1>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">HOME</a>
+            <a href="collection.html">CARS</a>
+            <a href="index.html#about">ABOUT</a>
+            <a href="index.html#review">REVIEWS</a>
+        </div>
+
+        <button class="btn-2" onclick="window.location.href='contact.html'">GET STARTED</button>
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+
+    </nav>
+    <!-- Navbar end-->
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1>Get in Touch for Your Dream Ride!</h1>
+        <p>
+            Have questions or need assistance? Our team is here to help you find the perfect
+            car for your adventure.
+        </p>
+        <form action="/" method="POST">
+            <!-- Replace With Access Key -->
+            <!-- <input type="hidden" name="access_key" value="put_your_access_key"> -->
+            <div class="car-select">
+                <div class="car-select-item">
+                    <label for="location">Location:</label>
+                    <select name="location" class="car-select-input" id="location">
+                        <option value="California">California</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New York">New York</option>
+                    </select>
+                </div>
+
+
+                <div class="car-select-item">
+                    <label for="car-type">Car to Rent:</label>
+                    <select name="car-type" class="car-select-input" id="car-type">
+                        <option value="Mercedes-AMG GT R">Mercedes-AMG GT R</option>
+                        <option value="Lamborghini Venemo">Lamborghini Venemo</option>
+                        <option value="Rolls Royce">Rolls Royce</option>
+                        <option value="Toyota 86 - Coupe">Toyota 86 - Coupe</option>
+                    </select>
+                </div>
+
+
+                <div class="car-select-item">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" class="car-select-input"/>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <input type="text" name="name" placeholder="Enter Name " required/>
+                <input type="email" name="email" placeholder="Enter Email " required/>
+                <input type="phone" name="phone" placeholder="Enter Phone Number" required/>
+                <button type="submit" class="btn-2">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Contact Section end-->
+
+    <!-- Footer Section -->
+    <footer class="contact-footer">
+        <div class="callout">
+            <h2>Lets drive with MetroRide Today!</h2>
+            <p class="callout-desc">
+                Need assisitance or ready to reserve your wheels? Contact us now for prompt services
+                and Effortless booking!
+            </p>
+            <div class="callout-buttons">
+                <button class="btn-2 btn-callout" onclick="window.location.href='collection.html'">
+                    <p>Check Our Cars</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+
+                <button class="btn-2 btn-callout btn-callout-black onclick=" window.location.href='contact.html'">
+                    <p>Book Now</p>
+                    <i class=" fa-solid fa-phone"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="/" class="footer-brand">Metro<b class="accent">Ride</b></a>
+            <div class="socials">
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Section end-->
+
+
+</body>
+
+</html>

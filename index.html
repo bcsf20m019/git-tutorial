@@ -1,99 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MetroRide</title>
 </head>
-<style>
-    *{
-        margin:0px;
-        padding:0px;
-    }
-    html,
-    body{
-        text-align:  center;
-        }
-    h1{
-        background-color: aqua;
-        line-height: 70px;
-        margin-bottom: 70px;
-    }
-    .choices{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        gap: 70px;
-    }
-     .choice{
-        height:155px;
-        width:155px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-    }
-    .choice:hover{
-        cursor: pointer;
-       background-color: black;
-            
-    } 
-    img{
-        height:140px;
-        width:140px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-   .score-board{
-         display: flex;
-        justify-content: center;
-        align-items:center;
-        font-size: 25px;
-        gap:70px;
-        margin-top: 50px;
-   }
-   #user-score,#comp-score{
-       font-size: 50px;
-   }
-    .msg{
-        margin-top: 50px;
-    }
-   #text{
-     font-size: 25px;
-    background-color: rgb(226, 43, 144);
-    line-height: 5rem;
-    display: inline;
-    border-radius: 1rem;
-    padding: 1rem;
-   }
-</style>
+
 <body>
-    <h1>Rock  Paper Scissor </h1>
-    <div class="choices">
-        <div class ="choice" id="rock">
-            <img src="rock (2).png">
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>Metro<b class="accent">Ride</b></h1>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">HOME</a>
+            <a href="collection.html">CARS</a>
+            <a href="index.html#about">ABOUT</a>
+            <a href="index.html#review">REVIEWS</a>
         </div>
-       <div class ="choice" id="paper">
-           <img src="paper.png">
-       </div>
-       <div class ="choice" id="scissor">
-           <img src="scissors.png">
-       </div>
-    </div>
-    <div class="score-board">
-        <div class="score">
-            <p id="user-score">0</p>
-             <p>YOU</p>
+
+        <button class="btn-2" onclick="window.location.href='contact.html'">GET STARTED</button>
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
         </div>
-        <div class="score">
-            <p id="comp-score">0</p>
-             <p>COMP</p>
+
+    </nav>
+    <!-- Navbar end-->
+
+    <!-- hero section -->
+    <div class="hero-page">
+        <div class="hero-headlines">
+            <h1>
+                Easy And Fast Way To <b class="accent">Rent</b> A Car with MetroRide.
+            </h1>
+            <p>
+                we offer a wide extend of rental cars to suit your needs. whether you are arranging a weekend
+                travel or a business trip.
+            </p>
+            <button class="btn-2 btn-hero" onclick="window.location.href='contact.html'">Get Started</button>
+            <div class="download-buttons">
+                <img src="img/app_store_img.png" alt="img" />
+                <img src="img/google_play_img.png" alt="img" />
+            </div>
         </div>
+        <img src="img/hero_img.png" class="hero-page-img" alt="img">
+
     </div>
-    <div class = "msg">
-       <p id="text">Play Your Move</p>
-    </div>
- <script src="First.js"></script>
-  
+
+    <!-- hero section end-->
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h1>
+                Your Premier Choice For Effortless Car Rentals
+            </h1>
+            <p class="about-subline">
+                Experience the ultimate convenience with MetroRide, where renting a car is as Easy as a few clicks.
+            </p>
+            <div class="about-info">
+                <div class="about-info-item">
+                    <hr class="about-hr" />
+                    <img src="img/about-info-item-1.png" alt="img">
+                    <h5>Efficiency</h5>
+                    <p>
+                        MetroRide stands out for its streamlined rental process, ensuring customers can quickly
+                        and easily book their desired vehicles.
+                    </p>
+                </div>
+
+                <div class="about-info-item">
+                    <hr class="about-hr" />
+                    <img src="img/about-info-item-2.png" alt="img">
+                    <h5>Diverse Fleet</h5>
+                    <p>
+                        MetroRide boasts a Diverse Fleet of well-maintained vehicles, catering to the varied needs
+                        and preferences of its customers.
+                    </p>
+                </div>
+
+                <div class="about-info-item">
+                    <hr class="about-hr" />
+                    <img src="img/about-info-item-3.png" alt="img">
+                    <h5>Exceptional services</h5>
+                    <p>
+                        Beyond just providing vehicles, MetroRide is commmited to delivering Exceptional customer
+                        services
+                        at every touch point.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About section end -->
+
+    <!-- collection section -->
+    <section class="collection" id="collection">
+        <h1> Our Car Collections</h1>
+        <div class="collection-container">
+            <!-- Car # 01 -->
+            <div class="collection-car-item">
+                <img src="img/cars/car-1.png" alt="img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>$80.00</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>California</h6>
+                        </div>
+                    </div>
+                    <h2>Mercedes-AMG GT R</h2>
+                    <button class="btn-2 btn-car" onclick="window.location.href='contact.html'">
+                        <p> Book Now</p>
+                        <i class="fa-solid fa-phone"></i>
+
+                    </button>
+                </div>
+            </div>
+
+            <!-- Car # 02 -->
+            <div class="collection-car-item">
+                <img src="img/cars/car-2.png" alt="img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>$60.00</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>Los Angeles</h6>
+                        </div>
+                    </div>
+                    <h2>BMW 428i - F32</h2>
+                    <button class="btn-2 btn-car" onclick="window.location.href='contact.html'">
+                        <p> Book Now</p>
+                        <i class="fa-solid fa-phone"></i>
+
+                    </button>
+                </div>
+            </div>
+
+            <!-- Car # 03 -->
+            <div class="collection-car-item">
+                <img src="img/cars/car-3.png" alt="img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>$40.00</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>California</h6>
+                        </div>
+                    </div>
+                    <h2>Toyota 86 - Coupe</h2>
+                    <button class="btn-2 btn-car" onclick="window.location.href='contact.html'">
+                        <p> Book Now</p>
+                        <i class="fa-solid fa-phone"></i>
+
+                    </button>
+                </div>
+            </div>
+
+            <!-- Car # 04 -->
+            <div class="collection-car-item">
+                <img src="img/cars/car-4.png" alt="img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>$40.00</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>New York</h6>
+                        </div>
+                    </div>
+                    <h2>2018 Lexus</h2>
+                    <button class="btn-2 btn-car" onclick="window.location.href='contact.html'">
+                        <p> Book Now</p>
+                        <i class="fa-solid fa-phone"></i>
+
+                    </button>
+                </div>
+            </div>
+
+            <!-- Car # 05 -->
+            <div class="collection-car-item">
+                <img src="img/cars/car-5.png" alt="img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>$100.00</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>Las Vegas</h6>
+                        </div>
+                    </div>
+                    <h2>Rolls Royce Dawn</h2>
+                    <button class="btn-2 btn-car" onclick="window.location.href='contact.html'">
+                        <p> Book Now</p>
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Car # 06 -->
+            <div class="collection-car-item">
+                <img src="img/cars/car-6.png" alt="img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>$100.00</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>New Jersey</h6>
+                        </div>
+                    </div>
+                    <h2>Lamborghini Venemo</h2>
+                    <button class="btn-2 btn-car" onclick="window.location.href='contact.html'">
+                        <p> Book Now</p>
+                        <i class="fa-solid fa-phone"></i>
+
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn-car btn-herocar" onclick="window.location.href='collection.html'">
+            <p>See All Cars</p>
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+
+    </section>
+    <!-- collection section end-->
+
+    <!-- Review Section -->
+     <section class="review" id="review">
+        <h1>Hear what out clients say</h1>
+        <div class="review-container">
+            <!-- Review # 1 -->
+             <div class="review-item">
+                <p>
+                    Renting with <b class="accent">MetroRide</b> was an absolute breeze!
+                    From booking online to picking up the car, everything was smooth and efficient.
+                </p>
+                <div class="review-people">
+                    <img src="img/testimonials-1.png" alt="img">
+                    <h5>Sarah H.</h5>
+                </div>
+             </div>
+
+             <!-- Review # 2 -->
+             <div class="review-item">
+                <p>
+                    I can't recommend <b class="accent">MetroRide</b> enough! Their diverse fleet
+                    allowed me to choose the perfect car for my weekend gateway.
+                </p>
+                <div class="review-people">
+                    <img src="img/testimonials-2.png" alt="img">
+                    <h5>Michael T.</h5>
+                </div>
+             </div>
+
+             <!-- Review # 3 -->
+             <div class="review-item">
+                <p>
+                    <b class="accent">MetroRide</b> exeeceded all my expectations! Their flexibility
+                    with drop-off and pickup made my travel experience stress-free.
+                </p>
+                <div class="review-people">
+                    <img src="img/testimonials-3.png" alt="img">
+                    <h5>William A.</h5>
+                </div>
+             </div>
+        </div>
+     </section>
+
+    <!-- Review Section end-->
+
+    <!-- Footer Section -->
+     <footer class="index-footer">
+        <div class="callout">
+            <h2>Lets drive with MetroRide Today!</h2>
+            <p class="callout-desc">
+                Need assisitance or ready to reserve your wheels? Contact us now for prompt services
+                and Effortless booking!
+            </p>
+            <div class="callout-buttons">
+                <button class="btn-2 btn-callout" onclick="window.location.href='collection.html'">
+                    <p>Check Our Cars</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+
+                <button class="btn-2 btn-callout btn-callout-black onclick="window.location.href='contact.html'">
+                    <p>Book Now</p>
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="/" class="footer-brand">Metro<b class="accent">Ride</b></a>
+            <div class="socials">
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+     </footer>
+
+     <!-- Footer Section end-->
+
+
 </body>
+
 </html>
